@@ -44,34 +44,44 @@ ul{
     font-size: 20px;
     cursor: pointer;
 }
-
-
 button {
-  position: relative;
-  top:0px;
-  left:100px;
-  background: linear-gradient(45deg, #6a11cb, #2575fc); 
-  padding: 8px 20px; 
+  font-size: 1.4em;
+  padding: 0.6em 0.8em;
+  border-radius: 0.5em;
   border: none;
-  border-radius: 20px; 
-  color: white;
-  font-size: 1em;
+  background-color: #000;
+  color: #fff;
   cursor: pointer;
-  transition: all 0.3s ease; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-  width: auto; 
+  box-shadow: 2px 2px 3px #000000b4;
 }
 
-button:hover {
-  background: linear-gradient(45deg, #2575fc, #6a11cb); 
-  transform: translateY(-2px); 
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+.btn {
+  position: relative;
+  padding: 3px;
+  background: linear-gradient(90deg, #03a9f4, #f441a5);
+  border-radius: 0.9em;
+  transition: all 0.4s ease;
 }
 
-button:active {
-  transform: translateY(0);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-radius: 0.9em;
+  z-index: -10;
+  filter: blur(0);
+  transition: filter 0.4s ease;
 }
+
+.btn:hover::before {
+  background: linear-gradient(90deg, #03a9f4, #f441a5);
+  filter: blur(1.2em);
+}
+.btn:active::before {
+  filter: blur(0.2em);
+}
+
 nav ul li {
   padding: 0.5rem 1rem; /* Add padding to make the hover effect more visible */
   transition: all 0.3s ease; /* Smooth transition for hover effect */
