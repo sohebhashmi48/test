@@ -2,7 +2,7 @@
     margin: 0%;
     padding: 0%;
     overflow: hidden;
-    width: 100%;
+    width: auto;
   }
   body{
     background-image: url(venom.jpeg.jpeg);
@@ -15,26 +15,33 @@
     align-items: center;
     justify-content: space-between;
     background-color:transparent;
-    padding: 1rem 2rem;
+    padding: 10px 25px;
     width: 100%;
-    height: 10vh;
     position: relative;
   }
 
   .logo{
     color: aliceblue;
-    font-size: 2em;
+    font-size: 36px;
+    width: 20%;
   }
   .logo span{
     color :rgb(40, 224, 68)
   }
+.nav-left {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-end;
+}
 ul{
     list-style: none;
     color: white;
     display: flex;
     flex-direction: row;
     gap:30px;
-    font-size: 1.2em;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -44,7 +51,7 @@ button {
   top:0px;
   left:100px;
   background: linear-gradient(45deg, #6a11cb, #2575fc); 
-  padding: 0.5rem 1rem; 
+  padding: 8px 20px; 
   border: none;
   border-radius: 20px; 
   color: white;
